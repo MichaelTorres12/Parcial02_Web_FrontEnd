@@ -1,19 +1,19 @@
 <table class="table mt-2">
-    <thead class="table-dark" >
-      <tr>
-        <th scope="col">Id</th>
-        <th scope="col">Departamento</th>
-        <th scope="col">Candidato</th>
-        <th scope="col">Votos</th>
-      </tr>
-    </thead>
-    <tbody *ngFor="let CandidatoItem of CandidatoItem">
-      <tr>
-        <td>{{ CandidatoItem.Id }}</td>
-        <td>{{ CandidatoItem.Departamento }}</td>
-        <td>{{ CandidatoItem.Candidato }}</td>
-        <td>{{ CandidatoItem.Votos }}</td>
-      </tr>
-    </tbody>
-  </table>
+  <thead class="table-dark" >
+    <tr>
+      <th scope="col">Candidato</th>
+      <th scope="col">Cantidad De Votos</th>
+      <th scope="col">Porcentaje</th>
+    </tr>
+  </thead>
+  
+    <tr *ngFor="let candidato of medicList">
+      <td>{{ candidato.candidato }}</td>
+      <td>{{ candidato.cantidadDeVotos }}</td>
+      <td>{{ candidato.porcentaje }}</td>
+    </tr>
+  
+</table>
+
+
 

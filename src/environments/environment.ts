@@ -4,7 +4,13 @@
 
 export const environment = {
   production: false,
-  HOST: 'http://localhost:7070/api'
+  HOST: 'http://localhost:9595',
+  KEYCLOAK: 'http://localhost:9595',
+  TOKEN_AUTH_USERNAME: 'michaelygarby@gmail.com',
+  TOKEN_AUTH_PASSWORD: '123',
+  REFRESH_TOKEN: 'refresh_token',
+  CLIENT_ID: 'mediapp-backend',
+  TOKEN_NAME: 'access_token',
 };
 
 /*
