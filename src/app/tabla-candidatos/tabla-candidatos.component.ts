@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TablaCandidatosComponent implements OnInit {
 
+  CandidatoItem = [
+    { Id: 1, Departamento: 'San Salvador', Candidato: 'Juan Pérez', Votos: 1000 },
+    { Id: 2, Departamento: 'La Libertad', Candidato: 'Maria López', Votos: 800 },
+    // ... otros items
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

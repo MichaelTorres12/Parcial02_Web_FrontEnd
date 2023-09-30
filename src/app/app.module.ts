@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http'; // Importa HttpClientModule
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http'; // Importa HttpClientModule
 
 import { AppComponent } from './app.component';
 import { BlogComponent } from './components/blog/blog.component';
@@ -13,11 +13,11 @@ import { TablaCandidatosComponent } from './tabla-candidatos/tabla-candidatos.co
     AppComponent,
     BlogComponent,
     LoginComponent,
-    TablaCandidatosComponent
+    TablaCandidatosComponent,
   ],
   imports: [
-    AppRoutingModule,
     BrowserModule,
+    AppRoutingModule,
     HttpClientModule 
   ],
   providers: [],

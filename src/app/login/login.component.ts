@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router) { }
 
   redirectToPage() {
-    this.router.navigate(['']);
+    this.router.navigate(['/tabla-candidatos']);
   }
   
 
